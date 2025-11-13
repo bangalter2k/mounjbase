@@ -65,6 +65,27 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 			width: auto;
 			z-index: 100000;
 		}
+
+        .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366; /* verde oficial do WhatsApp */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d; /* tom mais escuro no hover */
+}
+
+.btn-whatsapp img {
+    vertical-align: middle;
+}
 </style>
 <link rel='stylesheet' id='wp-components-css' href='wp-includes/css/dist/components/style.min32d4.css?ver=6.8.3' media='all' />
 <link rel='stylesheet' id='godaddy-styles-css' href='wp-content/mu-plugins/vendor/wpex/godaddy-launch/includes/Dependencies/GoDaddy/Styles/build/latest4c56.css?ver=2.0.2' media='all' />
@@ -355,13 +376,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
         <div class="container">
             <h2>Comece sua transformação hoje mesmo</h2>
             <p>Entre em contato via WhatsApp para solicitar sua cotação e garantir o melhor preço.</p>
-            <div class="stock-alert">
-                <i class="fas fa-exclamation-circle"></i>
-                <span>Estoque limitado &#8211; Garanta já o seu</span>
-            </div>
-            <a href="https://api.whatsapp.com/send?phone=5511959385575&amp;text=Ol%C3%A1%2C%20gostaria%20de%20cotar%20o%20Mounjaro" class="btn btn-primary btn-large">
-                <i class="fab fa-whatsapp"></i> Solicitar via WhatsApp
-            </a>
+    
+<a href="https://api.whatsapp.com/send?phone=5511959385575&text=Ol%C3%A1%2C%20gostaria%20de%20cotar%20o%20Mounjaro" 
+   class="btn-whatsapp" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         alt="WhatsApp" width="24" style="margin-right:8px;">
+    Solicitar via WhatsApp
+</a>
+
             <div class="payment-info">
                 <p>Pagamento Seguro via Pix ou Cartão de Crédito em até 10x</p>
                 <div class="payment-icons">
@@ -377,7 +399,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="logo_mounjaro.png" alt="Logo">
                 </div>
                 <div class="footer-info">
                     <p>Mounjaro® é uma marca registrada da Eli Lilly and Company.</p>
@@ -393,10 +414,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://api.whatsapp.com/send?phone=5511959385575&amp;text=Ol%C3%A1%2C%20gostaria%20de%20cotar%20o%20Mounjaro" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
     <script src="script.js"></script>
 </body>
